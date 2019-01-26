@@ -407,6 +407,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.40501
       objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295019, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295019, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295019, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5304065316601295018, guid: 0cbf78751acfc6c36ad3c3524fab207b,
         type: 3}
       propertyPath: m_Color.r
@@ -422,10 +437,16 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295018, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ea521156391e3f541967108757026f9f,
+        type: 3}
     - target: {fileID: 5304065316601295017, guid: 0cbf78751acfc6c36ad3c3524fab207b,
         type: 3}
       propertyPath: m_Radius
-      value: 0.16
+      value: 3.14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cbf78751acfc6c36ad3c3524fab207b, type: 3}
@@ -496,6 +517,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -87.43201
       objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295019, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295019, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295019, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295018, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 949d5a8f3f9af81439757c985984c1f1,
+        type: 3}
+    - target: {fileID: 5304065316601295017, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: m_Radius
+      value: 3.14
+      objectReference: {fileID: 0}
     - target: {fileID: 5304065316601295020, guid: 0cbf78751acfc6c36ad3c3524fab207b,
         type: 3}
       propertyPath: throttleInput
@@ -505,11 +552,6 @@ PrefabInstance:
         type: 3}
       propertyPath: turnInput
       value: PlayerOneTurnInput
-      objectReference: {fileID: 0}
-    - target: {fileID: 5304065316601295017, guid: 0cbf78751acfc6c36ad3c3524fab207b,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cbf78751acfc6c36ad3c3524fab207b, type: 3}
