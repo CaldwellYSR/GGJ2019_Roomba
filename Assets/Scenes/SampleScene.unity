@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 446284978}
   - component: {fileID: 446284977}
   - component: {fileID: 446284976}
+  - component: {fileID: 446284980}
   m_Layer: 0
   m_Name: roomba_crappy
   m_TagString: Untagged
@@ -230,6 +231,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &446284980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446284975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b862ce8e956a1e5c8238e4281043cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 0.05
+  turnSpeed: 3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
