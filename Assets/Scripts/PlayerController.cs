@@ -10,12 +10,36 @@ public class PlayerController : MonoBehaviour
   public float turnSpeed;
 
   public string throttleInput, turnInput;
+  public Transform floor;
+
+  private Vector2 floorSize;
+
+  void Start()
+  {
+    floorSize = new Vector2(
+      (floor.GetComponent<BoxCollider2D>().size.x * floor.localScale.x),
+      (floor.GetComponent<BoxCollider2D>().size.y * floor.localScale.y)
+    );
+  }
 
     public GameObject Brush; 
 
     void FixedUpdate()
   {
     HandleMovement();
+    PickupDust();
+  }
+
+  void PickupDust()
+  {
+    RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, Mathf.Infinity, LayerMask.GetMask("Floor"));
+    if (hit.collider != null)
+    {
+      var uv = new Vector2(
+        1024f * (hit.point.x / floorSize.x),
+        1024f * (hit.point.y / floorSize.y)
+      );
+    }
   }
 
   void HandleMovement()
