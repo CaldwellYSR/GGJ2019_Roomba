@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour
   void FixedUpdate()
   {
     var throttle = Input.GetAxis(throttleInput);
-    Debug.Log(throttle);
     transform.Translate(0, playerSpeed * throttle, 0);
 
     var turn = (throttle <= -0.05f) ? -1f : 1f;
