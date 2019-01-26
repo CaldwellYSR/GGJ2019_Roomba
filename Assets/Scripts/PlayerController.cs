@@ -9,12 +9,15 @@ public class PlayerController : MonoBehaviour
   [Range(1f, 5f)]
   public float turnSpeed;
 
+  public string throttleInput, turnInput;
+
   void FixedUpdate()
   {
-    var throttle = Input.GetAxis("Vertical");
+    var throttle = Input.GetAxis(throttleInput);
+    Debug.Log(throttle);
     transform.Translate(0, playerSpeed * throttle, 0);
 
-    var turnAmount = Input.GetAxis("Horizontal");
-    transform.Rotate(0, 0, turnSpeed * -turnAmount);
+    var turn = (throttle <= -0.05f) ? -1f : 1f;
+    transform.Rotate(0, 0, turn * turnSpeed * -Input.GetAxis(turnInput));
   }
 }

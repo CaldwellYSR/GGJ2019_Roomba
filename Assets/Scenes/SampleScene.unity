@@ -245,6 +245,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 0.05
   turnSpeed: 3
+  throttleInput: PlayerTwoThrottleInput
+  turnInput: "PlayerTwo\x13TurnInput"
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
