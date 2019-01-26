@@ -11,8 +11,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: a
     positiveButton: d
-    altNegativeButton: 
-    altPositiveButton: 
+    altNegativeButton: left
+    altPositiveButton: right
     gravity: 3
     dead: 0.001
     sensitivity: 3
@@ -27,8 +27,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: s
     positiveButton: w
-    altNegativeButton: 
-    altPositiveButton: 
+    altNegativeButton: down
+    altPositiveButton: up
     gravity: 3
     dead: 0.001
     sensitivity: 3
@@ -41,8 +41,8 @@ InputManager:
     m_Name: PlayerTwoThrottleInput
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
+    negativeButton: down
+    positiveButton: up
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -57,8 +57,8 @@ InputManager:
     m_Name: "PlayerTwo\x13TurnInput"
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: left
-    positiveButton: right
+    negativeButton: 
+    positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
