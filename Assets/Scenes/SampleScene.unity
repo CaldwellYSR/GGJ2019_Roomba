@@ -356,6 +356,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809f263a489a299468aa009aba116f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_DampTime: 0.2
+  m_ScreenEdgeBuffer: 4
+  m_MinSize: 6.5
+  m_Targets:
+  - {fileID: 446284979}
 --- !u!4 &1440272583
 Transform:
   m_ObjectHideFlags: 0
