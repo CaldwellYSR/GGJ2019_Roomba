@@ -4,7 +4,7 @@
     {
         _MainTex ("Texture", 2D) = "white" {}
         _MaskTex ("Mask Texture", 2D) = "white" {}
-        _MaskColor ("Mask Color", Color) = (0, 0, 0, 1)
+        _MaskColor ("Mask Color", Color) = (1, 1, 1, 1)
         _MaskReplace ("Mask Replace Texture", 2D) = "white" {}
     }
     SubShader
