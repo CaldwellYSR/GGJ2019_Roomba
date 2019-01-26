@@ -15,6 +15,11 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
   {
+    HandleMovement();
+  }
+
+  void HandleMovement()
+  {
     var throttle = Input.GetAxis(throttleInput);
     transform.Translate(0, playerSpeed * throttle, 0);
 
