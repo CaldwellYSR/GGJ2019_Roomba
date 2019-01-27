@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class PlayerController : MonoBehaviour
   [Range(1f, 5f)]
   public float turnSpeed;
 
-  [Range(0.1f, 10f)]
+  [Range(1f, 25f)]
   public float brushSize;
 
   public string throttleInput, turnInput;
@@ -22,7 +23,8 @@ public class PlayerController : MonoBehaviour
   private RenderTexture renderTexture;
   private Material floorMat;
 
-  private int homeWidth = 2048, homeHeight = 995;
+  private int homeWidth = 512, homeHeight = 249;
+  private bool Playing = true;
 
   void Start()
   {
@@ -35,12 +37,25 @@ public class PlayerController : MonoBehaviour
     floorMat.SetTexture("_MaskTex", renderTexture);
   }
 
-  void FixedUpdate() {
-    HandleMovement();
+  void Update()
+  {
+    if (Input.GetKey(KeyCode.Space))
+    {
+      Playing = false;
+    }
   }
 
-  void LateUpdate(){
-    PickupDust(); 
+  void FixedUpdate()
+  {
+    if (Playing)
+    {
+      HandleMovement();
+      PickupDust(); 
+    }
+    else
+    {
+      SceneManager.LoadScene("EndScene");
+    }
   }
 
   void HandleMovement()

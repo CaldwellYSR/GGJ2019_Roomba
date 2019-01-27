@@ -8,6 +8,7 @@ public class DustManager : MonoBehaviour
 
   void Awake()
   {
-    renderTexture = new RenderTexture(2048, 995, 0);
+    DontDestroyOnLoad(this.gameObject);
+    renderTexture = new RenderTexture(512, 249, 0);
   }
 }
