@@ -16,11 +16,13 @@ public class PlayerController : MonoBehaviour
   public Transform floor;
 
   public GameObject Brush; 
+  public Color brushColor;
   private Vector2 floorSize;
-  private Color brushColor = Color.white;
   public Texture paintTexture;
   private RenderTexture renderTexture;
   private Material floorMat;
+
+  private int homeWidth = 2048, homeHeight = 995;
 
   void Start()
   {
@@ -61,8 +63,8 @@ public class PlayerController : MonoBehaviour
     if (hit.collider != null)
     {
       var uv = new Vector2(
-          2048f * (hit.point.x / floorSize.x),
-          995f * (hit.point.y / floorSize.y)
+          homeWidth * (hit.point.x / floorSize.x),
+          homeHeight * (hit.point.y / floorSize.y)
           );
       Paint(uv);
     }
@@ -83,7 +85,7 @@ public class PlayerController : MonoBehaviour
     RenderTexture.active = renderTexture;
 
     GL.PushMatrix();
-    GL.LoadPixelMatrix(0, 2048, 995, 0);
+    GL.LoadPixelMatrix(0, homeWidth, homeHeight, 0);
 
     Graphics.DrawTexture(
         rect,

@@ -2163,6 +2163,26 @@ PrefabInstance:
       propertyPath: playerSpeed
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295020, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: brushColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295020, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: brushColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295020, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: brushColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295020, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: brushColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5304065316601295017, guid: 0cbf78751acfc6c36ad3c3524fab207b,
         type: 3}
       propertyPath: m_Radius
@@ -2307,6 +2327,26 @@ PrefabInstance:
         type: 3}
       propertyPath: playerSpeed
       value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295020, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: brushColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295020, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: brushColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295020, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: brushColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304065316601295020, guid: 0cbf78751acfc6c36ad3c3524fab207b,
+        type: 3}
+      propertyPath: brushColor.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5304065316601295017, guid: 0cbf78751acfc6c36ad3c3524fab207b,
         type: 3}
