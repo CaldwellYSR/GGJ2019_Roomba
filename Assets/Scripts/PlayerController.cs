@@ -46,11 +46,16 @@ public class PlayerController : MonoBehaviour
 
   void HandleMovement()
   {
+    var turnAmount = -Input.GetAxis(turnInput);
+
+    var speedModifier = (turnAmount != 0) ? 0.8f : 1f;
+     
+
     var throttle = Input.GetAxis(throttleInput);
-    transform.Translate(0, playerSpeed * throttle, 0);
+    transform.Translate(0, playerSpeed * throttle * speedModifier, 0);
 
     var turn = (throttle <= -0.05f) ? -1f : 1f;
-    transform.Rotate(0, 0, turn * turnSpeed * -Input.GetAxis(turnInput));
+    transform.Rotate(0, 0, turn * turnSpeed * turnAmount);
 
     if (gameObject.activeSelf)
     {
