@@ -8,6 +8,6 @@ public class DustManager : MonoBehaviour
 
   void Awake()
   {
-    renderTexture = new RenderTexture(1024, 1024, 0);
+    renderTexture = new RenderTexture(2048, 995, 0);
   }
 }

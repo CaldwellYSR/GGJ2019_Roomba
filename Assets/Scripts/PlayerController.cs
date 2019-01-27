@@ -61,8 +61,8 @@ public class PlayerController : MonoBehaviour
     if (hit.collider != null)
     {
       var uv = new Vector2(
-          1024f * (hit.point.x / floorSize.x),
-          1024f * (hit.point.y / floorSize.y)
+          2048f * (hit.point.x / floorSize.x),
+          995f * (hit.point.y / floorSize.y)
           );
       Paint(uv);
     }
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
     RenderTexture.active = renderTexture;
 
     GL.PushMatrix();
-    GL.LoadPixelMatrix(0, 1024, 1024, 0);
+    GL.LoadPixelMatrix(0, 2048, 995, 0);
 
     Graphics.DrawTexture(
         rect,
