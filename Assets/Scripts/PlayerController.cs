@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-
   [Range(0.05f, 0.5f)]
   public float playerSpeed;
 
@@ -24,7 +22,6 @@ public class PlayerController : MonoBehaviour
   private Material floorMat;
 
   private int homeWidth = 512, homeHeight = 249;
-  private bool Playing = true;
 
   void Start()
   {
@@ -37,25 +34,14 @@ public class PlayerController : MonoBehaviour
     floorMat.SetTexture("_MaskTex", renderTexture);
   }
 
-  void Update()
-  {
-    if (Input.GetKey(KeyCode.Space))
-    {
-      Playing = false;
-    }
-  }
-
   void FixedUpdate()
   {
-    if (Playing)
-    {
-      HandleMovement();
-      PickupDust(); 
-    }
-    else
-    {
-      SceneManager.LoadScene("EndScene");
-    }
+    HandleMovement();
+  }
+
+  void LateUpdate()
+  {
+    PickupDust(); 
   }
 
   void HandleMovement()

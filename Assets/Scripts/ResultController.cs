@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ResultController : MonoBehaviour
 {
+  public Text WinnerLabel, RedScoreLabel, BlueScoreLabel;
+
   private Color removeColor = new Color(0f, 0f, 0f, 0f);
 
   void Start()
@@ -24,8 +27,14 @@ public class ResultController : MonoBehaviour
     var redScore = totalDust.Where(color => color == Color.red).ToArray().Count() / (float)totalDust.Count() * 100;
     var blueScore = totalDust.Where(color => color == Color.white).ToArray().Count() / (float)totalDust.Count() * 100;
 
-    redScore = (float)Math.Round(redScore, 2);
-    blueScore = (float)Math.Round(blueScore, 2);
+    redScore = Mathf.Round(redScore);
+    blueScore = Mathf.Round(blueScore);
+
+    var winner = (redScore > blueScore) ? "Red" : "Blue";
+
+    WinnerLabel.text = winner + " Roomba Wins!!!";
+    RedScoreLabel.text = "Red: " + redScore + "%";
+    BlueScoreLabel.text = "Blue: " + blueScore + "%";
 
   }
 }
